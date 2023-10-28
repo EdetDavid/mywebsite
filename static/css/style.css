@@ -553,9 +553,9 @@ footer i:hover {
   }
 
   #nav-logo {
-    width: 170px !important;
+    width: 150px !important;
     left: 25px;
-    max-height: 70px !important;
+    max-height: 60px !important;
   }
 }
 
