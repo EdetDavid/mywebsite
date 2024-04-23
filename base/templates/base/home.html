@@ -1,0 +1,191 @@
+{% extends 'main.html' %} {% block content %} {% load static %}
+<style>
+  @media (max-width: 500px) {
+    #socials a {
+      margin: 0 5px !important;
+    }
+  }
+
+  #socials a i.fa-brands {
+    font-size: 20px !important;
+  }
+</style>
+
+
+<!-- showcase  -->
+<section class="p-5 m-5 container mx-auto justify-content-center align-items-center">
+  <div id="showcase" class="d-flex gap-lg-5 offset-lg-1 justify-content-between align-items-center">
+    <!-- col 1 -->
+    <div id="showcase__text" class="col-md-6 justify-content-start">
+      <!-- greetings -->
+      <div class="d-flex my-4">
+        <h2 id="greetings-text" class="text-dark m-2 my-4">Hi, I'm David</h2>
+      </div>
+      <!-- Title  -->
+      <div class="d-flex my-4">
+        <h1 class="text-light text-wrap">
+          I am a Fullstack Developer with the aim to Rule the Tech Multiverse.
+        </h1>
+      </div>
+      <!-- text quote -->
+      <div class="d-flex  my-4">
+        <h3 class="lead text-light">
+          Multidisciplinary designer who aims at becoming the world 🌍
+          <b> Best </b> Web developer.
+          <a id="github-link" class="text-dark" href="https://github.com/EdetDavid"> github.com/EdetDavid </a>
+        </h3>
+      </div>
+    </div>
+    <!-- col 2 -->
+    <div class="col-md-4">
+      <img id="showcase__image"
+        class="scale-up-center w-100 img-thumbnail shadow img-fluid rounded-pill d-flex justify-content-center align-items-center"
+        src="{% static './images/frosh.png' %}" alt="showcase-img" />
+    </div>
+  </div>
+</section>
+
+<!-- My skills      -->
+<section class="container skills" data-aos="fade-up" data-aos-duration="3000">
+  <h2 class="text-center my-2 text-decoration-underline my-5">
+    <a type="button" class="text-warning" href="#myskills"> My Skills</a>
+  </h2>
+  <div id="myskills" class="d-flex align-items-center justify-content-center">
+    <div class="_card">
+      <h4>Html & Css</h4>
+      <img src="{% static './images/download (5).png' %}" width="" height="60px" alt="html-css" />
+    </div>
+
+    <div class="_card">
+      <h4>Javascript</h4>
+      <img src="{% static './images/javascript.png' %}" width="" height="60px" alt="javascript-icon" />
+    </div>
+    <div class="_card">
+      <h4>React JS</h4>
+      <img src="https://th.bing.com/th?id=OIP.NgoO9GZty71i2XnnEAtKbQHaFj&w=135&h=101&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+        width="" height="60px" alt="react-icon" />
+    </div>
+    <div class="_card">
+      <h4>Django</h4>
+      <img src="{% static './images/django.png' %}" class="w-75" width="59px" height="60px" alt="django-img" />
+    </div>
+    <div class="_card">
+      <h4>Python</h4>
+      <img src="{% static './images/python.jpeg' %}" width="55px" height="60px" alt="python-img" />
+    </div>
+
+    <div class="_card">
+      <h4>Wordpress</h4>
+      <img src="{% static './images/wordpress.png' %}" width="100px" height="65px" alt="wordpress-img" />
+    </div>
+  </div>
+</section>
+
+<!-- skills mobile -->
+<section class="p-lg-5 p-md-3 p-sm-2 p-xs-1" data-aos="fade-up" data-aos-duration="3000">
+  <div id="skills__mobile" class="d-none  flex-wrap justify-content-center align-items-center">
+    <!-- card 1 -->
+    <div class="_card w-50 d-flex flex-column justify-content-center align-items-center">
+      <h4>Html & Css</h4>
+      <img src="{% static './images/download (5).png' %}" width="" height="60px" alt="html&css-icon" />
+    </div>
+    <!-- card 2 -->
+    <div class="_card w-50 d-flex flex-column justify-content-center align-items-center">
+      <h4>Javascript</h4>
+      <img src="{% static './images/javascript.png' %}" width="" height="60px" alt="javascript" />
+    </div>
+    <!-- card 3 -->
+    <div class="_card w-50 d-flex flex-column justify-content-center align-items-center">
+      <h4>React JS</h4>
+      <img src="https://th.bing.com/th?id=OIP.NgoO9GZty71i2XnnEAtKbQHaFj&w=135&h=101&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+        width="" height="60px" alt="" />
+    </div>
+    <!-- card 4 -->
+    <div class="_card w-50 d-flex flex-column justify-content-center align-items-center">
+      <h4>Django</h4>
+      <img src="{% static './images/django.png' %}" class="w-75" width="59px" height="60px" s alt="django-img" />
+    </div>
+    <!-- card 5 -->
+    <div class="_card w-50 d-flex flex-column justify-content-center align-items-center">
+      <h4>Python</h4>
+      <img src="{% static './images/python.jpeg' %}" width="" height="60px" alt="python-img" />
+    </div>
+    <!-- card 6 -->
+    <div class="_card w-50 d-flex flex-column justify-content-center align-items-center">
+      <h4>Wordpress</h4>
+      <img src="{% static './images/wordpress.png' %}" width="100px" height="65px" alt="" />
+    </div>
+  </div>
+</section>
+
+<!-- Skill Chart -->
+<section class="d-flex justify-content-center align-items-center my-5">
+  <div class="container" data-aos="fade-up" data-aos-duration="3000">
+    <div class="chart bg-dark" style="width: 700px; margin: 0 auto">
+      <canvas id="barchart"></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Us -->
+<section id="contact">
+  <div class="container" data-aos="fade-up" data-aos-duration="2000">
+    <div class="d-flex flex-column justify-content-center align-items-center img-fluid">
+      <!-- contact header -->
+      <h2 class="contact-text shadow text-white">Contact Me</h2>
+      <div class="d-flex flex-column justify-content-center align-items-center" id="contact__form-wrapper">
+        <form id="myForm" action="{% url 'home' %}" method="POST" class="form-control">
+          {% csrf_token %}
+          <label for="name">Enter Name: </label>
+          <input id="name" type="text" name="name" class="form-control mb-2" placeholder="Enter Your Name" required />
+          <label for="email"> Enter Email: </label>
+          <input id="email" type="email" name="email" class="form-control mb-2" placeholder="Enter Your Email"
+            required />
+          <label for="phone"> Enter Phone: </label>
+          <input id="phone" type="phone" name="phone" class="form-control mb-2" placeholder="Enter Your Phone"
+            required />
+          <label for="form-message"> Message Us: </label>
+          <textarea name="message" class="w-100" id="form-message" cols="35" rows="5"
+            placeholder="Write message..."></textarea>
+
+          <br />
+          <a href="{% url 'home' %}">
+            <button type="submit" class="btn btn-outline-light mb-1">Send</button>
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end -->
+
+<!-- socials -->
+<div id="socials" class="d-flex justify-content-center align-items-center p-3">
+  <p class=" mb-0 fs-7 text-info">@follow me: </p>
+  <div>
+    <a class="text-decoration-none mx-3 mx-sm-2" href="https://github.com/EdetDavid"><i
+        class="fa-brands fa-github text-white fa-1x"></i>
+    </a>
+    <a class="text-decoration-none mx-3 mx-sm-2" href="https://www.facebook.com/profile.php?id=100080024666123"><i
+        class="fa-brands fa-facebook text-white"></i>
+    </a>
+    <a class="text-decoration-none mx-3 mx-sm-2"
+      href="https://www.instagram.com/invites/contact/?i=rujib2gio5dh&utm_content=oemfdo8"><i
+        class="fa-brands fa-instagram text-white"></i>
+    </a>
+    <a class="text-decoration-none mx-3 mx-sm-2" href="https://twitter.com/EdetDavid1234"><i
+        class="fa-brands fa-twitter text-white"></i>
+    </a>
+    <a class="text-decoration-none mx-3 mx-sm-2" href="https://www.linkedin.com/in/edet-david-b2a85a266"><i
+        class="fa-brands fa-linkedin text-white"></i>
+    </a>
+    <a class="text-decoration-none mx-3 mx-sm-2" href="https://wa.me/07046959318"><i
+        class="fa-brands fa-whatsapp text-white"></i>
+    </a>
+  </div>
+</div>
+
+
+
+{% endblock content %}

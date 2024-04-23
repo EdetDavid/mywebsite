@@ -1,0 +1,16 @@
+.fade {
+  animation: transitionIn ease-out 1.5s forwards;
+  
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    
+  }
+
+  to {
+    opacity: 1;
+    
+  }
+}

@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" , mininmun-scale="1.0" , maximum-scale="1.0" />
+  <title>Dvooskid.dev</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static './font-awesome/all.min.css' %}" />
+  <link rel="stylesheet" href="{% static './font-awesome/fontawesome.min.css' %}" />
+  <link rel="stylesheet" href="{% static './css/master.css' %}" />
+  <link rel="stylesheet" href="{% static './css/aos.css' %}" />
+  <link rel="stylesheet" href=" {% static 'css/style.css' %}" />
+  <link rel="icon" href="{% static './images/frosh.png' %}" type="image/x-icon">
+
+  <script src="{% static './js/chart.js' %} "></script>
+</head>
+
+<body id="body">
+
+
+  <center>
+    <!-- preloader -->
+    <div id="preloader" style="background-image: url('{% static  " preloaders/pink-diamond.gif" %}');">
+    </div>
+  </center>
+
+  <!-- preloader delay -->
+  <div class="d-none">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk" title="Youtube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk" title="Youtube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk" title="Youtube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk" title="Youtube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk" title="Youtube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe> -->
+
+  </div>
+  <!--  end        -->
+
+  {% include "navbar.html" %}
+  <div class="app">
+    {% block content %} {% endblock content %}{% include "footer.html" %}
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static './js/chart1.js' %}"></script>
+  <script src="{% static './js/aos.js' %}"></script>
+  <script src="{% static './js/main.js' %}"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

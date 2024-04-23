@@ -1,0 +1,90 @@
+{% extends 'main.html' %} {% block content %} {% load static %}
+<style>
+  h1 {
+    margin-bottom: 10px;
+    font-size: 64px;
+    line-height: 1.0625;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    text-transform: none;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .link__hover>a:hover {
+      color: #fff !important;
+      transform: scale(1.2);
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .navbar-brand:hover {
+      color: #fff;
+    }
+  }
+
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 28px !important;
+      margin-top: 15px !important;
+    }
+
+    h4 {
+      font-size: small !important;
+    }
+
+    p {
+      font-size: 15px !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 32px !important;
+      margin-top: 35px;
+    }
+
+    h4 {
+      font-size: medium !important;
+    }
+
+    p {
+      font-size: 18px !important;
+    }
+  }
+</style>
+<div id="container" class="container-flex my-5 p-5">
+  <!-- Heading Text -->
+  <h1 class="text-white fw-bold">I build value by design.</h1>
+
+  <!-- body text -->
+  <p class="lead text-dark" style="
+      line-height: 1.5 !important;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    ">
+    Hi, am Edet David, am a Fullstack developer with the passion for creating
+    super <br />
+    responsive ,and highly scalable web-apps and software applications.
+    <br />
+    I am currenly an undergraduate in the University of Uyo, Nigera. <br />
+  </p>
+
+  <h4 class="fst-italic text-white text-decoration-underline">MY HOBBIES</h4>
+  <div class="d-flex">
+    <ul class="text-warning opacity-75">
+      <li>
+        <p class="text-white">Reading</p>
+      </li>
+      <li>
+        <p class="text-white">Singing</p>
+      </li>
+      <li>
+        <p class="text-white">Coding</p>
+      </li>
+      <li>
+        <p class="text-white">Playing games</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+{% endblock content %}
